@@ -8,7 +8,8 @@
  */
 int main(void)
 {
-	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char quote[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+
 	write(1, quote, sizeof(quote) / sizeof(char));
 	return (1);
 }

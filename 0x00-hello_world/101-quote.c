@@ -5,6 +5,7 @@
  * main - prints some text without using printf or puts
  *
  * Return: 1
+ *
  */
 
 int main(void)

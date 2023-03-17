@@ -5,7 +5,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - print the last digit of the number
+ * main - prints the last digit of a number
  *
  * Return: 0
  */
@@ -19,11 +19,11 @@ int main(void)
 
 	lastD = n % 10;
 
-	if (lastD > 5) 
+	if (lastD > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, lastD);
 	}
-       	else if (lastD == 0)
+	else if (lastD == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, lastD);
 	}
@@ -31,7 +31,6 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastD);
 	}
-	
 	/* your code goes there */
 	return (0);
 }

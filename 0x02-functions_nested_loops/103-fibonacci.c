@@ -10,22 +10,21 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	unsigned long goal = 4000000, count;
-	float res;
+	float result;
 
 	while (1)
 	{
 		sum = fib1 + fib2;
 
-		if (sum > goal)
+		if (sum > 4000000)
 			break;
 
 		if ((sum % 2) == 2)
-			res += sum;
+			result += sum;
 
 		fib1 = fib2;
 		fib2 = sum;
 	}
-	printf("%0.f\n", res);
+	printf("%0.f\n", result);
 	return (0);
 }

@@ -9,9 +9,8 @@
 
 int main(void)
 {
-	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum, res = 0;
-	unsigned long goal = 4000000;
+	unsigned long goal = 4000000, count;
 
 	for (count = 0; count < goal; count++)
 	{

@@ -1,4 +1,11 @@
+#include "main.h"
 #include <stdio.h>
+
+/**
+ * main - prints natural numbers
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
@@ -12,4 +19,5 @@ int main(void)
 		}
 	}
 	printf("%d\n", res);
+	return (0);
 }

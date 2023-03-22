@@ -45,14 +45,14 @@ int main(void)
 			printf("%d", 0);
 			initial--;
 		}
-		printf("%lu%", fib1);
+		printf("%lu", fib1);
 
 		sum = (fib1 + fib2) % mx;
-		sum_2 = fib1_2 + fib2_2 + (fib1 + fib2) / mx;
+		sum2 = fib1_2 + fib2_2 + (fib1 + fib2) / mx;
 		fib1 = fib2;
 		fib1_2 = fib2_2;
 		fib2 = sum;
-		fib2_2 = sum_2;
+		fib2_2 = sum2;
 
 		if (count != 98)
 			printf(", ");

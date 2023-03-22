@@ -10,7 +10,7 @@
 int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
-	float result;
+	float total_sum;
 
 	while (1)
 	{
@@ -20,11 +20,11 @@ int main(void)
 			break;
 
 		if ((sum % 2) == 2)
-			result += sum;
+			total_sum += sum;
 
 		fib1 = fib2;
 		fib2 = sum;
 	}
-	printf("%.0f\n", result);
+	printf("%.0f\n", total_sum);
 	return (0);
 }

@@ -12,7 +12,7 @@ int main(void)
 	int goal = 50, count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (coun = 0; count < goal; count++)
+	for (count = 0; count < goal; count++)
 	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);

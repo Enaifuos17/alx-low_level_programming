@@ -8,7 +8,7 @@
 
 void print_rev(char *s)
 {
-	int i = 0, j;
+	int i = 0;
 
 	/* get the length of the string */
 	while (s[i])
@@ -16,9 +16,9 @@ void print_rev(char *s)
 		i++;
 	}
 	/* start the printing from the end */
-	for (j = i; j >= 0; j--)
+	while (i--)
 	{
-		_putchar(s[j]);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }

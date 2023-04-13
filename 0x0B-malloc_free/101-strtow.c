@@ -5,7 +5,7 @@
 /**
  * wrd_count - counts the number of words in a string
  *
- * @str: string to count
+ * @s: string to count
  *
  * Return: number of words
  */
@@ -21,9 +21,7 @@ int wrd_count(char *s)
 				words++;
 		}
 		else if (i == 0)
-		{
 			words++;
-		}
 	}
 	words++; /* '\0' */
 	return (words);
@@ -38,8 +36,7 @@ int wrd_count(char *s)
  */
 char **strtow(char *str)
 {
-	int i, j, k, l;
-	int n = 0, wc = 0;
+	int i, j, k, l, n = 0, wc = 0;
 	char **w;
 
 	if (str == NULL || *str == '\0')

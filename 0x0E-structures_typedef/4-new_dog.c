@@ -12,8 +12,8 @@ int _strlen(const char *str)
 {
 	int len = 0;
 
-	for (; str[len] != '\0'; len++)
-		;
+	while (*str++)
+		len++;
 	return (len);
 }
 

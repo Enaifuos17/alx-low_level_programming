@@ -12,7 +12,7 @@ void format_char(char *separator, va_list ap)
 
 /**
  * format_int - formats integer
- * @seperator: the string separator
+ * @separator: the string separator
  * @ap: argument pointer
  */
 void format_int(char *separator, va_list ap)

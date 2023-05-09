@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, ERR_NOREAD, argv[1]), exit(98);
 	to_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to_fd == -1)
-		dprintf(STDERR_FILENO, ERR_NOWRITEm argv[2]), exit(99);
+		dprintf(STDERR_FILENO, ERR_NOWRITE, argv[2]), exit(99);
 
 	while ((b = read(from_fd, buff, READ_BUF_SIZE)) > 0)
 		if (write(to_fd, buff, b) != b)

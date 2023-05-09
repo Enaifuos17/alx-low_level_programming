@@ -7,7 +7,7 @@
 #define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 /**
- * main - program that copies the content of a file to anthr file
+ * main - program that copies the content of a file to another file
  * @argc: argument count
  * @argv: argument vector
  *

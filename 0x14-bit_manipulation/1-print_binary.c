@@ -2,7 +2,7 @@
 
 /*
  * print_binary - prints the binary representation of a number
- * @n: the number
+ * @n: the number to print
  *
  * Return: void
  */
@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	int bit = sizeof(n) * 8;
 	int printed = 0;
 
-	/* while the bit exists (!0) */
+	/* while the bit exists */
 	while (bit)
 	{
 		if (n & 1L << --bit)
